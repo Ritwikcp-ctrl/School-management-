@@ -1,93 +1,125 @@
-const menuItems = [
-    {
-        title:"MENU",
-        items:[
-            {
-                icon:"/home.png",
-                lable:"Home",
-                href:"/",
-            },
-            {
-                icon:"/teacher.png",
-                label:"Teachers",
-                href:"/teachers",
-            },
-            {
-               icon:"/students.png",
-               label:"Students",
-               href:"/students", 
-            },
-            {
-                icon:"/parents.png",
-                label:"Parents",
-                href:"/parents",
-            },
-            {
-                icon:"/class.png",
-                label:"Classes",
-                href:"/classes",
-            },
-            {
-                icon:"/lesson.png",
-                label:"Lessons",
-                href:"/lessons",
-            },
-            {
-                icon:"/exams.png",
-                label:"Exams",
-                href:"/exams",
-            },
-            {
-                icon:"/assignment.png",
-                label:"Assignments",
-                href:"/assignments",
-            },
-            {
-                icon:"/attendance.png",
-                label:"Attendance",
-                href:"/attendance"
-            },
-            {
-                icon:"/calender.png",
-                lable:"Events",
-                href:"/events",
-            },
-            {
-                icon:"/announcement.png",
-                lable:"Announcements",
-                href:"/announcements",
-            },
-          
-        ],
-    },
+import Link from "next/link";
+import {
+  HomeIcon,
+  AcademicCapIcon,
+  UsersIcon,
+  UserGroupIcon,
+  BuildingOffice2Icon,
+  BookOpenIcon,
+  ClipboardDocumentCheckIcon,
+  DocumentTextIcon,
+  CheckBadgeIcon,
+  MegaphoneIcon,
+  UserCircleIcon,
+  Cog6ToothIcon,
+  ArrowRightOnRectangleIcon,
+} from "@heroicons/react/24/solid";
 
-    {
-        title:"OTHER",
-        items:[
-            {
-                icons:"/profile.png",
-                label:"Profile",
-                href:"/profile",
-            },
-            {
-                icon:"/settings.png",
-                label:"Settings",
-                href:"/settings",
-            },
-            {
-                icon:"/logout.png",
-                label:"Logout",
-                href:"/logout",
-            },
-        ],
-    },
+
+const menuItems = [
+  {
+    title: "MENU",
+    items: [
+      {
+        icon: HomeIcon,
+        label: "Home",
+        href: "/",
+      },
+      {
+        icon:AcademicCapIcon ,
+        label: "Teachers",
+        href: "/teachers",
+      },
+      {
+        icon: UsersIcon,
+        label: "Students",
+        href: "/students",
+      },
+      {
+        icon: UserGroupIcon,
+        label: "Parents",
+        href: "/parents",
+      },
+      {
+        icon: BuildingOffice2Icon,
+        label: "Classes",
+        href: "/classes",
+      },
+      {
+        icon: BookOpenIcon,
+        label: "Lessons",
+        href: "/lessons",
+      },
+      {
+        icon: ClipboardDocumentCheckIcon,
+        label: "Exams",
+        href: "/exams",
+      },
+      {
+        icon: DocumentTextIcon,
+        label: "Assignments",
+        href: "/assignments",
+      },
+      {
+        icon: CheckBadgeIcon,
+        label: "Attendance",
+        href: "/attendance",
+      },
+      {
+        icon: "/calender.png",
+        label: "Events",
+        href: "/events",
+      },
+      {
+        icon: MegaphoneIcon,
+        label: "Announcements",
+        href: "/announcements",
+      },
+    ],
+  },
+
+  {
+    title: "OTHER",
+    items: [
+      {
+        icon: UserCircleIcon,
+        label: "Profile",
+        href: "/profile",
+      },
+      {
+        icon: Cog6ToothIcon,
+        label: "Settings",
+        href: "/settings",
+      },
+      {
+        icon: ArrowRightOnRectangleIcon,
+        label: "Logout",
+        href: "/logout",
+      },
+    ],
+  },
 ];
 
+const Menu = () => {
+  return (
+    <div className="mt-4 text-sm text-black">
+      {menuItems.map((i) => (
+        <div className="flex flex-col gap-3" key={i.title}>
 
-const Menu = ()=>{
-    return(
-        <div className = "">Menu</div>
-    )
-}
+          <span className = "hidden lg:block text-pink-800 font-light my-4">{i.title}</span>
+
+          {i.items.map((item) => (
+            <Link href={item.href} key={item.label} className ="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2">
+             <img src={item.icon} alt="" width={20} height={20} />
+
+             <span className="hidden lg:block">{item.label}</span>
+
+            </Link>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Menu;

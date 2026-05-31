@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Menu from "../source/components/Menu";
+import Navbar from "../source/components/Navbar";
 
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function DashboardLayout({
     <div className ="h-screen flex">
 
      {/*LEFT*/}
-     <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4">
+     <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-white p-4">
       <Link href = "/" className = "flex items-center justify-center lg:justify-start gap-2">
        <img src = "https://m.media-amazon.com/images/I/61-DC+EzC+L.png" alt = "logo" width={32} height={32} />
       <span className = "hidden lg:block text-black">SchoolM</span>
@@ -28,7 +29,10 @@ export default function DashboardLayout({
 
 
      {/*RIGHT*/}
-     <div className = "w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">R</div>
+     <div className = "w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-white overflow-scroll">
+      <Navbar/>
+      {children}
+     </div>
      
     </div>
   );
