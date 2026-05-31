@@ -110,7 +110,11 @@ const Menu = () => {
 
           {i.items.map((item) => (
             <Link href={item.href} key={item.label} className ="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2">
-             <img src={item.icon} alt="" width={20} height={20} />
+             {typeof item.icon === "string" ? (
+               <img src={item.icon} alt="" width={20} height={20} />
+             ) : (
+               <item.icon className="w-5 h-5" />
+             )}
 
              <span className="hidden lg:block">{item.label}</span>
 
