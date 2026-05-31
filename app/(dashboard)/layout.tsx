@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import Link from "next/link";
+import Menu from "../source/components/Menu";
+
 
 export const metadata: Metadata = {
   title: "Create school Management app",
@@ -16,9 +17,18 @@ export default function DashboardLayout({
     <div className ="h-screen flex">
 
      {/*LEFT*/}
-     <div className="w-1/6 bg-blue-50">L</div>
+     <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4">
+      <Link href = "/" className = "flex items-center justify-center lg:justify-start gap-2">
+       <img src = "https://m.media-amazon.com/images/I/61-DC+EzC+L.png" alt = "logo" width={32} height={32} />
+      <span className = "hidden lg:block text-black">SchoolM</span>
+      </Link>
+      <Menu/>
+      </div>
+
+
+
      {/*RIGHT*/}
-     <div className = "w-5/6 bg-blue-200">R</div>
+     <div className = "w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">R</div>
      
     </div>
   );
