@@ -13,6 +13,7 @@ import {
   UserCircleIcon,
   Cog6ToothIcon,
   ArrowRightOnRectangleIcon,
+  CalendarDaysIcon,
 } from "@heroicons/react/24/solid";
 
 
@@ -66,7 +67,7 @@ const menuItems = [
         href: "/attendance",
       },
       {
-        icon: "/calender.png",
+        icon: CalendarDaysIcon,
         label: "Events",
         href: "/events",
       },
@@ -109,15 +110,13 @@ const Menu = () => {
           <span className = "hidden lg:block text-pink-800 font-light my-4">{i.title}</span>
 
           {i.items.map((item) => (
-            <Link href={item.href} key={item.label} className ="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2">
-             {typeof item.icon === "string" ? (
-               <img src={item.icon} alt="" width={20} height={20} />
-             ) : (
-               <item.icon className="w-5 h-5" />
-             )}
-
-             <span className="hidden lg:block">{item.label}</span>
-
+            <Link href={item.href} key={item.label} className="flex items-center gap-2 py-2 px-2 rounded hover:bg-gray-100">
+              {typeof item.icon === "string" ? (
+                <img src={item.icon} alt={item.label} className="w-5 h-5" />
+              ) : (
+                <item.icon className="w-5 h-5" />
+              )}
+              <span className="hidden lg:block">{item.label}</span>
             </Link>
           ))}
         </div>
