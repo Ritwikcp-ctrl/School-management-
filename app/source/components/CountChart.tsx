@@ -60,18 +60,19 @@ const style = {
 const CountChart = () => {
   return (
     // MAIN
-    <div className="">
+    <div className="bg-white rounded-lg p-3 w-lg">
       {/* TITLE */}
-      <div className="flex justify-between items-center ">
-        <h1 className="text-black p-3">Students</h1>
-        <EllipsisVerticalIcon className="h-5 w-5 text-gray-300 hover:text-white" />
+      <div className="flex justify-between items-center">
+        <h1 className="text-black p-3 text-lg font-semibold">Students</h1>
+        <EllipsisVerticalIcon className="h-5 w-5 text-gray-300 hover:text-2xl" />
       </div>
 
       {/* CHART */}
-      <div className="">
+      <div className="w-full h-full ">
         <RadialBarChart
           style={{
             width: "100%",
+            height:"80%",
             maxWidth: "700px",
             maxHeight: "80vh",
             aspectRatio: 1.618,
@@ -98,7 +99,20 @@ const CountChart = () => {
       </div>
 
       {/* BOTTOM */}
-      <div></div>
+      <div className="flex justify-center gap-16">
+        <div className="flex flex-col gap-1">
+          <div className="w-5 h-5 bg-amber-100 rounded-full">
+            <h1 className="font-bold">1,234</h1>
+            <h2 className="text-xs text-gray-300">Boys (55%)</h2>
+          </div>
+          <div className="flex flex-col gap-1">
+            <div className="w-5 h-5 bg-amber-400 rounded-full">
+              <h1 className="font-bold">1,234</h1>
+              <h2 className="text-xs text-gray-300">Girls (55%)</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
