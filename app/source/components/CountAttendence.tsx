@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-// import { RechartsDevtools } from '@recharts/devtools';
+
 // #region Sample data
 const data = [
   {

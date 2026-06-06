@@ -2,6 +2,8 @@ import CountChart from "@/app/source/components/CountChart";
 import UserCard from "@/app/source/components/userCards";
 import CountAttendence from "@/app/source/components/CountAttendence";
 import type { ComponentType } from "react";
+import FinanceChart from "@/app/source/components/FinanceChart";
+import EventCalender from "@/app/source/components/EventCalender";
 
 // Cast the imported UserCard to a typed React component and use that alias where you render the cards.
 // Made changes.
@@ -36,11 +38,16 @@ const Adminpage = () => {
 
 
         {/* BOTTOM CHART */}
-        <div className="w-full h-[500px] "></div>
+       <div className="col-span-1 lg:col-span-2 w-full rounded-2xl border dark:border-gray-700 bg-white shadow-sm p-6">
+  <div className="h-122.5">
+    <FinanceChart />
+  </div>
+</div>
       </div>
 
       {/* RIGHT */}
-      <div className="w-full lg:w-1/3 "></div>
+      <div className="w-full lg:w-1/3 ">
+      <EventCalender/></div>
     </div>
   );
 };

@@ -26,3 +26,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.react-clendar {
+  width:100% !important;
+  border:none !important;
+  font-family:"Inter" , sans-serif !important;
+}
+
+
+.ract-calendar__navigation__label__labelText{
+  font-weight: 600;
+}
+
+
+.react-clendar__tile--active {
+  background-color: #ededed;
+  color:black !important;
+}
