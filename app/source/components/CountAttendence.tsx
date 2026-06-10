@@ -61,24 +61,24 @@ const data = [
 
 const CountAttendence = () => {
   return (
-    <div className="bg-white rounded-lg p-4 h-full ">
+    <div className="bg-white rounded-lg px-3 py-3 flex-1 ">
      <div className="flex justify-between items-center">
       <h1 className="text-black p-3 text-lg font-semibold">Attendence</h1>
-       <EllipsisVerticalIcon className="h-5 w-5 text-gray-300 hover:text-te" />
+       <EllipsisVerticalIcon className="h-5 w-5 text-gray-900 hover:text-te" />
        </div>
-       <div className="w-full h-[90%] " >
+       <div className="w-full h-full flex flex-col px-9 py-4 mt-0 items-center " >
        <ComposedChart
         style={{
           width: "100%",
-          height:"90%",
+          height:"100%",
         }}
         responsive
         data={data}
         margin={{
-          top: 30,
-          right: 30,
+          top: 3,
+          right: 3,
           bottom: 0,
-          left: 10,
+          left: 0,
         }}
       >
         <CartesianGrid stroke="#f5f5f5" />

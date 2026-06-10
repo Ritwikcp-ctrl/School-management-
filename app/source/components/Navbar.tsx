@@ -11,7 +11,7 @@ const Navbar = () => {
       {/*search bar */}
       <div className="hidden md:flex items-center gap-2 text-xs rounded-full ring-[1.5px] ring-gray-300 px-2 ">
         {/* <img src="/search.png" alt="" width={14} height={14} /> */}
-        <MagnifyingGlassIcon className="w-5 h-5 text-gray-300" />
+        <MagnifyingGlassIcon className="w-5 h-5 text-gray-900" />
         <input type="text"
         placeholder = "Search..."
         className ="w-50 p-2 bg-transparent outline-none" />

@@ -22,7 +22,42 @@ const events = [
         title: "time to go to gym",
         time :"1:00pm - 2:00pm",
         description:"we have to do this work by the time we go for holiday"
-    }
+    },
+
+    {
+        id:3,
+        title: "time to go to gym",
+        time :"1:00pm - 2:00pm",
+        description:"we have to do this work by the time we go for holiday"
+    },
+
+    {
+        id:4,
+        title: "time to go to gym",
+        time :"1:00pm - 2:00pm",
+        description:"we have to do this work by the time we go for holiday"
+    },
+
+    {
+        id:5,
+        title: "time to go to gym",
+        time :"1:00pm - 2:00pm",
+        description:"we have to do this work by the time we go for holiday"
+    },
+
+    {
+        id:6,
+        title: "time to go to gym",
+        time :"1:00pm - 2:00pm",
+        description:"we have to do this work by the time we go for holiday"
+    },
+
+    {
+        id:7,
+        title: "time to go to gym",
+        time :"1:00pm - 2:00pm",
+        description:"we have to do this work by the time we go for holiday"
+    },
 
 ]
 
@@ -35,7 +70,7 @@ const EventCalender =() => {
 
         <div className="flex items-center justify-between">
             <h1 className ="text-xl font-semibold my-4">Events</h1>
-            <EllipsisVerticalIcon  className="h-5 w-5 text-gray-300 hover:text-te"
+            <EllipsisVerticalIcon  className="h-5 w-5 text-gray-900 hover:text-te"
             />
         </div>
         
@@ -51,8 +86,7 @@ const EventCalender =() => {
             </div>
           ))} 
         </div>
-        
-        
+         
         </div>
     )
 }

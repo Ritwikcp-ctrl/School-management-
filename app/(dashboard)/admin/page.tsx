@@ -24,17 +24,18 @@ const Adminpage = () => {
 
 
         {/* MIDDLE CHARTS */}
-        <div className="flex gap-4 flex-col lg:flex-row ">
+        <div className="flex gap-4 flex-col lg:flex-row w-full">
 
-          <CountChart />
+          <div className ="bg-white rounded-lg px-3 py-3 flex-1">
+            <CountChart />
+          </div>
 
           {/* ATTENDENCE CHART */}
-          <div className="w-full lg:w-1/3 h-112.5">
+          <div className= "bg-white rounded-lg px-3 py-3 flex-1">
           <CountAttendence/>
           </div>
 
         </div>
-
 
 
         {/* BOTTOM CHART */}

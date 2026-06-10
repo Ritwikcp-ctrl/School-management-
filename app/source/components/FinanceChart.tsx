@@ -54,7 +54,7 @@ const FinanceChart =() => {
       {/* main */}
       <div className="flex justify-between items-center">
         <h1 className ="text-black p-3 text-lg font-semibold ">Finance</h1>
-        <EllipsisVerticalIcon className="h-5 w-5 text-gray-300 hover:text-te" />
+        <EllipsisVerticalIcon className="h-5 w-5 text-gray-900 hover:text-te" />
       </div>
       <div className="w-full h-[90%]  rounded-xl p-6">
         {/* chart */}

@@ -1,5 +1,11 @@
+//remember this page will affect all the pages as it is RootLayout 
+
 import type { Metadata } from "next";
 import "./globals.css";
+import { Geist } from "next/font/google";
+
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: "Create school Management app",
@@ -12,8 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-     <body>{children}</body>
-    </html>
-  );
+    
+      <html lang="en" >
+        <body>
+          {children}
+        </body>
+      </html>
+    
+    
+  )
+  
 }
