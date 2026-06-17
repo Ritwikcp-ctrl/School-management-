@@ -1,9 +1,9 @@
-import CountChart from "@/app/source/components/CountChart";
-import UserCard from "@/app/source/components/userCards";
-import CountAttendence from "@/app/source/components/CountAttendence";
+import CountChart from "@/app/source/Component/CountChart";
+import UserCard from "@/app/source/Component/userCards";
+import CountAttendence from "@/app/source/Component/CountAttendence";
 import type { ComponentType } from "react";
-import FinanceChart from "@/app/source/components/FinanceChart";
-import EventCalender from "@/app/source/components/EventCalender";
+import FinanceChart from "@/app/source/Component/FinanceChart";
+import EventCalender from "@/app/source/Component/EventCalender";
 
 // Cast the imported UserCard to a typed React component and use that alias where you render the cards.
 // Made changes.

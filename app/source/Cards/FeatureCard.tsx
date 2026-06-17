@@ -1,18 +1,18 @@
 "use client";
 
-const ProjectCard = () => {
+const FeatureCard = () => {
   return (
     <div className=" w-full max-w-[550px] rounded-[32px] border border-black/10 bg-white p-8">
       <div className="flex flex-col h-full">
         {/* Small Statement */}
         <div>
           <div className="text-sm font-semibold uppercase tracking-wider text-gray-500">
-            Decentralization
+            IMMUTABILITY
           </div>
 
           {/* Heading */}
           <h2 className="mt-4 text-4xl font-black tracking-tight text-black">
-            You own it
+            You can't currupt it
           </h2>
         </div>
 
@@ -24,7 +24,7 @@ const ProjectCard = () => {
         {/* Paragraph */}
         <div>
           <p className="text-lg leading-relaxed text-gray-600">
-           Blockchain operates without a central authority, distributing control across a network of nodes for greater transparency and reliability.
+           Once data is added to the blockchain, it cannot be altered or deleted, ensuring permanent and trustworthy records.
           </p>
         </div>
 
@@ -41,4 +41,4 @@ const ProjectCard = () => {
   );
 };
 
-export default ProjectCard;
+export default FeatureCard;

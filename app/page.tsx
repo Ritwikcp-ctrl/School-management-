@@ -1,5 +1,5 @@
 "use client"
-import HomePageCard from "./source/components/HomePageCard";
+import HomePageCard from "./source/Component/HomePageCard";
 
 const home =()=>{
   return (

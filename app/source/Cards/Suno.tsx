@@ -1,18 +1,18 @@
-const UserCard =()=>{
-  return (
-    <div className=" w-full max-w-[550px] rounded-[32px] border border-black/10 bg-white p-8">
+const Suno=()=>{
+    return(
+       <div className=" w-full max-w-[550px] rounded-[32px] border border-black/10 bg-white p-8">
 
   <div className="flex flex-col h-full">
 
     {/* Small Statement */}
     <div>
       <div className="text-sm font-semibold uppercase tracking-wider text-gray-500">
-        SMART CONTRACTS
+        TRANSPARENCY
       </div>
 
       {/* Heading */}
       <h2 className="mt-4 text-4xl font-black tracking-tight text-black">
-        You automate it
+        You make it transparent
       </h2>
     </div>
 
@@ -24,7 +24,7 @@ const UserCard =()=>{
     {/* Paragraph */}
     <div>
       <p className="text-lg leading-relaxed text-gray-600">
-       Self-executing digital contracts automate agreements and transactions when predefined conditions are met.
+       Every transaction is recorded on a public ledger, allowing users to verify and track activities in real time.
       </p>
     </div>
 
@@ -39,6 +39,7 @@ const UserCard =()=>{
 
   </div>
 </div>
-  )
-}
-export default UserCard;
+    );
+};
+
+export default Suno; 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Menu from "../source/components/Menu";
-import Navbar from "../source/components/Navbar";
+import Menu from "../source/Component/Menu";
+import Navbar from "../source/Component/Navbar";
 
 
 export const metadata: Metadata = {
